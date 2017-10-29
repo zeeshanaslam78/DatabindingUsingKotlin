@@ -29,6 +29,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="@string/has_issues"
+        android:textAllCaps="true"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/repository_name"
         app:layout_constraintEnd_toEndOf="parent"
