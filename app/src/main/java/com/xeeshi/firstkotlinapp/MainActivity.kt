@@ -33,9 +33,30 @@ class MainActivity : AppCompatActivity() {
         binding.repository = repository
         binding.executePendingBindings()
 
-        Handler().postDelayed({repository.repositoryName="Android Kotlin App" }, 5000)
+
+        /*Handler().postDelayed({repository.repositoryName="Android Kotlin App" }, 5000)
         Handler().postDelayed({repository.repositoryOwner="Zeeshan"}, 7000)
-        Handler().postDelayed({repository.numberOfStars="1000 stars"}, 9000)
+        Handler().postDelayed({repository.numberOfStars="1000 stars"}, 9000)*/
+
+        Handler().postDelayed({
+            repository = Repository("Android Kotlin App",
+                    "Xeeshi", "200 stars", true)
+            binding.repository = repository
+        }, 5000)
+
+
+        Handler().postDelayed({
+            repository = Repository("Android Kotlin App",
+                    "Zeeshan", "200 stars", true)
+            binding.repository = repository
+        }, 7000)
+
+
+        Handler().postDelayed({
+            repository = Repository("Android Kotlin App",
+                    "Zeeshan", "1000 stars", true)
+            binding.repository = repository
+        }, 9000)
 
     }
 }
